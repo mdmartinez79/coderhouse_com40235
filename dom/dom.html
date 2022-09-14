@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Ejercicio - DOM</title>
+
+    
+    
+</head>
+<body>
+    <!--h1>Ejercicio - DOM</h1>
+    <p>Comision 40235</p>
+    <p>Alumno: Martin Diego Martinez</p-->
+
+    <!--h2 class="title"> Este ejercicio calcula un presupuesto de compra de computadora en base a opciones que escoje el
+        Usuario</h2>
+        <form>
+        <h3> Mouse:</h3>
+        <p><select id="Mouse">
+            <option value="500">Optico</option>
+            <option value="1200">Wireless</option>
+            <option value="2000">Gamer</option>
+            </select></p>
+        <h3> Teclado:</h3>
+        <p><select id="Teclado">
+            <option value="1000">Estandar</option>
+            <option value="1500">Wireless</option>
+            <option value="2000">Gamer</option>
+            </select></p>
+        <h3> Auriculares:</h3>
+        <p><select id="Auriculares">
+            <option value="3000">Genericos</option>
+            <option value="4000">Bluetooh</option>
+            <option value="5000">Gamer</option>
+            </select></p>
+        <h3> Monitor:</h3>
+        <p><select id="Monitor">
+            <option value="15000">Genericos</option>
+            <option value="20000">Curvo</option>
+            <option value="25000">Gamer</option>
+            </select></p>
+        <h3> Impresora:</h3>
+        <p><select id="Impresora">
+            <option value="15000">Tinta</option>
+            <option value="20000">Laser</option>
+            <option value="25000">Multifuncion</option>
+            </select></p>
+        <button type="button" id="button" class="btn btn-success" value="Calcular Presupuesto">CALCULAR</button>
+        
+        </form-->
+      
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+        
+        <!--p class="producto">Ingrese el número de producto (1-5), o ESC para salir: 
+            <input type="text" id="producto"></p>
+        <p class="cuota">Ingrese el plan de cuotas: \n 1 (3 cuotas) \n 2 (6 cuotas) \n 3 (12 cuotas), 0 para salir: 
+            <input type="text" id="cuotas"></p-->
+     
+       
+        <div class="col-6 border">
+            <h2>Lista de productos<h2>
+            <ul id="listaProductos">
+
+            </ul>
+
+        </div>
+        <div class="col-6 border">
+            <h2>Cantidad de productos<h2>
+            <ul id="cantidadProductos">
+
+            </ul>
+
+        </div>
+        <div class="col-6 border">
+            <h2>Lista de productos con Impuestos<h2>
+            <ul id="listaConImpProductos">
+
+            </ul>
+
+        </div>
+        <div class="col-6 border">
+            <h2>Financiación<h2>
+            <ul id="financiacion">
+
+            </ul>
+
+        </div>
+        <p class="planCuota">Plan de cuotas seleccionado: <input type="text" id="plan"></p>
+        <p class="total">Total de la Compra: <input type="text" id="resultado"></p>
+
+        <script src="js/dom.js"></script>
+</body>
+</html>
