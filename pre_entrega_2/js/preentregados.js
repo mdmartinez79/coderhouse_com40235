@@ -193,31 +193,31 @@ let productos = [
   function detalleJson()
   {
 
-    //let almacenados= JSON.parse(localStorage.getItem("produc"));
-    let almacenados= localStorage.getItem("produc");
+    let almacenados= JSON.parse(localStorage.getItem("produc"));
+    //let almacenados= localStorage.getItem("produc");
     
-
+//console.log(almacenados)
     //const almacenados = JSON.parse(localStorage.getItem("listaProductos"));
-    let productos = [];
+    //let productos = [];
     //Iteramos almacenados con for...of para transformar todos sus objetos a tipo producto.
-    for (const objeto of almacenados)
-    productos.push(new Producto(objeto));
+    //for (const objeto of almacenados)
+    //productos.push(new Producto(objeto));
     //Ahora tenemos objetos productos y podemos usar sus métodos
-        for (const producto of productos)
+        //for (const producto of productos)
         //producto.sumaIva();
-        {
+        //{
         let formJson = document.getElementById("Json");
         formJson.innerHTML = "";
-        console.log(producto)
+        //console.log(producto)
         let nuevoContenido = document.createElement("div");
-        nuevoContenido.innerHTML = `<h4> Detalle de productos ingresados: Nº:  ${producto.id} 
-        Producto: ${producto.producto} 
-        Precio: ${producto.precio}</h4>`;
+        nuevoContenido.innerHTML = `<h4> Detalle de productos ingresados: Nº:  ${almacenados.id} 
+        Producto: ${almacenados.producto} 
+        Precio: ${almacenados.precio}</h4>`;
       
         nuevoContenido.className = "info-Json";
         formJson.appendChild(nuevoContenido);
-        }
-
+        //}
+        localStorage.removeItem("produc")
 
   }
   
